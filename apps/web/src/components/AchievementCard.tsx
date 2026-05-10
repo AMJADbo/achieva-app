@@ -68,7 +68,7 @@ export default function AchievementCard({ achievement }: { achievement: Achievem
   const firstImage = achievement.mediaUrls?.[0];
 
   return (
-    <article className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition hover:border-[var(--color-border)] hover:shadow-lg hover:shadow-black/30">
+    <article className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] backdrop-blur-xl overflow-hidden transition hover:shadow-lg hover:shadow-black/20 hover:border-white/20">
       {/* Image */}
       {firstImage && (
         <Link href={`/achievements/${achievement.id}`}>
