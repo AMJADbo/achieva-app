@@ -5,20 +5,38 @@
   --color-primary-hover: #C2410C;
   --color-accent: #06B6D4;
   --color-accent-hover: #0891B2;
-  --color-bg: #0D0D0D;
-  --color-surface: #171717;
-  --color-surface-2: #222222;
-  --color-border: #2E2E2E;
+  --color-bg-from: #004aad;
+  --color-bg-to: #cb6ce6;
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-2: rgba(255, 255, 255, 0.10);
+  --color-border: rgba(255, 255, 255, 0.12);
   --color-text: #F5F5F5;
-  --color-muted: #737373;
+  --color-muted: rgba(255, 255, 255, 0.5);
 
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
 body {
-  background-color: var(--color-bg);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #004aad 0%, #7b3fb5 50%, #cb6ce6 100%);
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-sans);
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 * {
@@ -29,9 +47,9 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-bg);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
 }
