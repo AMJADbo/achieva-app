@@ -23,6 +23,7 @@ export type AchievementCategory =
   | "travel"
   | "career"
   | "art"
+  | "fishing"
   | "other";
 
 export interface Achievement {

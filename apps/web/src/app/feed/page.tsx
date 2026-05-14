@@ -11,6 +11,7 @@ const CATEGORIES = [
   { value: "travel", label: "Voyage" },
   { value: "career", label: "Carrière" },
   { value: "art", label: "Art" },
+  { value: "fishing", label: "🎣 Pêche" },
   { value: "other", label: "Autre" },
 ];
 
