@@ -6,7 +6,7 @@ import { CreateAchievementDto } from "./dto/create-achievement.dto";
 import { QueryAchievementsDto } from "./dto/query-achievements.dto";
 import { Achievement } from "./entities/achievement.entity";
 
-const TOKENS_ON_CREATE = 10;
+const TOKENS_ON_CREATE = 1;
 const TOKENS_ON_LIKE = 1;
 
 @Injectable()

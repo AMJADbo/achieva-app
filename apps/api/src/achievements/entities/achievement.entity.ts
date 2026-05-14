@@ -13,6 +13,7 @@ export enum AchievementCategory {
   TRAVEL = "travel",
   CAREER = "career",
   ART = "art",
+  FISHING = "fishing",
   OTHER = "other",
 }
 
